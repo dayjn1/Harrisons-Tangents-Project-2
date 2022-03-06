@@ -445,6 +445,29 @@ namespace Project2_HT
         {
             FetchBox.Text = i.Mnemonic;
         }
+        public static string dirParameter = AppDomain.CurrentDomain.BaseDirectory + @"\saved.txt";
+       
+        private void saveToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
 
+            /*  string Msg = "Cycle: " + cycleCount + "\n" +
+                           "Hazard: " + hazardCount;*/
+            FileStream fParameter = new FileStream(dirParameter, FileMode.Create, FileAccess.Write);
+            StreamWriter fileWrite = new StreamWriter(fParameter);
+            //fileWrite.BaseStream.Seek(0, SeekOrigin.End);
+
+            fileWrite.WriteLine(" Instruction | Fetch | Decode | Execute | Memory | WriteBack ");
+            fileWrite.WriteLine("_");
+
+            for (int i = 0; i < Input_Instructions.Count; i++)
+            {
+                fileWrite.WriteLine(Input_Instructions[i].Mnemonic);
+            }
+            fileWrite.WriteLine("Cycle: " + cycleCount + "\n");
+            fileWrite.WriteLine("Hazard: " + hazardCount);
+            // fileWrite.Write(Msg);
+            fileWrite.Flush();
+            fileWrite.Close();
+        }
     }
 }

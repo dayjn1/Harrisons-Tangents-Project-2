@@ -72,7 +72,7 @@ namespace Project2_HT
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(853, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(853, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,28 +82,29 @@ namespace Project2_HT
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click_1);
             // 
             // FetchBox
             // 
             this.FetchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FetchBox.Location = new System.Drawing.Point(60, 184);
             this.FetchBox.Name = "FetchBox";
-            this.FetchBox.Size = new System.Drawing.Size(100, 29);
+            this.FetchBox.Size = new System.Drawing.Size(100, 34);
             this.FetchBox.TabIndex = 1;
             // 
             // DecodeBox
@@ -111,7 +112,7 @@ namespace Project2_HT
             this.DecodeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DecodeBox.Location = new System.Drawing.Point(222, 184);
             this.DecodeBox.Name = "DecodeBox";
-            this.DecodeBox.Size = new System.Drawing.Size(100, 29);
+            this.DecodeBox.Size = new System.Drawing.Size(100, 34);
             this.DecodeBox.TabIndex = 2;
             // 
             // ExecuteBox
@@ -119,7 +120,7 @@ namespace Project2_HT
             this.ExecuteBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExecuteBox.Location = new System.Drawing.Point(370, 184);
             this.ExecuteBox.Name = "ExecuteBox";
-            this.ExecuteBox.Size = new System.Drawing.Size(100, 29);
+            this.ExecuteBox.Size = new System.Drawing.Size(100, 34);
             this.ExecuteBox.TabIndex = 3;
             // 
             // MemoryBox
@@ -127,7 +128,7 @@ namespace Project2_HT
             this.MemoryBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MemoryBox.Location = new System.Drawing.Point(519, 184);
             this.MemoryBox.Name = "MemoryBox";
-            this.MemoryBox.Size = new System.Drawing.Size(100, 29);
+            this.MemoryBox.Size = new System.Drawing.Size(100, 34);
             this.MemoryBox.TabIndex = 4;
             // 
             // RegisterBox
@@ -135,7 +136,7 @@ namespace Project2_HT
             this.RegisterBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterBox.Location = new System.Drawing.Point(661, 184);
             this.RegisterBox.Name = "RegisterBox";
-            this.RegisterBox.Size = new System.Drawing.Size(100, 29);
+            this.RegisterBox.Size = new System.Drawing.Size(100, 34);
             this.RegisterBox.TabIndex = 5;
             // 
             // label1
@@ -146,7 +147,7 @@ namespace Project2_HT
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(73, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 24);
+            this.label1.Size = new System.Drawing.Size(85, 29);
             this.label1.TabIndex = 6;
             this.label1.Text = "Fetch ";
             // 
@@ -158,7 +159,7 @@ namespace Project2_HT
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(229, 149);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 24);
+            this.label2.Size = new System.Drawing.Size(111, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "Decode ";
             // 
@@ -170,7 +171,7 @@ namespace Project2_HT
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(377, 149);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 24);
+            this.label3.Size = new System.Drawing.Size(113, 29);
             this.label3.TabIndex = 8;
             this.label3.Text = "Execute ";
             // 
@@ -182,7 +183,7 @@ namespace Project2_HT
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(525, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 48);
+            this.label4.Size = new System.Drawing.Size(106, 58);
             this.label4.TabIndex = 9;
             this.label4.Text = "Access\r\nMemory";
             // 
@@ -194,7 +195,7 @@ namespace Project2_HT
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(626, 149);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(205, 24);
+            this.label5.Size = new System.Drawing.Size(261, 29);
             this.label5.TabIndex = 10;
             this.label5.Text = "Write to Register File";
             // 
@@ -238,7 +239,7 @@ namespace Project2_HT
             this.cycleLabel.Location = new System.Drawing.Point(217, 242);
             this.cycleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cycleLabel.Name = "cycleLabel";
-            this.cycleLabel.Size = new System.Drawing.Size(21, 24);
+            this.cycleLabel.Size = new System.Drawing.Size(27, 29);
             this.cycleLabel.TabIndex = 14;
             this.cycleLabel.Text = "0";
             // 
@@ -251,7 +252,7 @@ namespace Project2_HT
             this.cycledescrLabel.Location = new System.Drawing.Point(151, 242);
             this.cycledescrLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cycledescrLabel.Name = "cycledescrLabel";
-            this.cycledescrLabel.Size = new System.Drawing.Size(68, 24);
+            this.cycledescrLabel.Size = new System.Drawing.Size(85, 29);
             this.cycledescrLabel.TabIndex = 15;
             this.cycledescrLabel.Text = "Cycle:";
             // 
@@ -263,7 +264,7 @@ namespace Project2_HT
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(254, 242);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 24);
+            this.label6.Size = new System.Drawing.Size(115, 29);
             this.label6.TabIndex = 16;
             this.label6.Text = "Hazards:";
             // 
@@ -275,7 +276,7 @@ namespace Project2_HT
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(344, 242);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 24);
+            this.label7.Size = new System.Drawing.Size(27, 29);
             this.label7.TabIndex = 17;
             this.label7.Text = "0";
             // 
@@ -287,7 +288,7 @@ namespace Project2_HT
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Location = new System.Drawing.Point(12, 41);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(538, 24);
+            this.label8.Size = new System.Drawing.Size(674, 29);
             this.label8.TabIndex = 18;
             this.label8.Text = "To get started, go to File and select open to get your file!";
             // 
@@ -317,7 +318,7 @@ namespace Project2_HT
             this.Controls.Add(this.DecodeBox);
             this.Controls.Add(this.FetchBox);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Tangents";
             this.Text = "Pipeline Simulator";
             this.menuStrip1.ResumeLayout(false);
