@@ -1,0 +1,8 @@
+ Instruction | Fetch | Decode | Execute | Memory | WriteBack 
+_____________________________________________________________
+ADD0000False
+STOR0000False
+SUB0000False
+Cycle: 6
+
+Hazard: 1

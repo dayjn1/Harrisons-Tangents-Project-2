@@ -39,3 +39,13 @@ C:\Users\Avery\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Deb
 C:\Users\Avery\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.CoreCompileInputs.cache
 C:\Users\Avery\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.exe
 C:\Users\Avery\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.pdb
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\bin\Debug\Project2_HT.exe.config
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\bin\Debug\Project2_HT.exe
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\bin\Debug\Project2_HT.pdb
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.AssemblyReference.cache
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.Tangents.resources
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.Properties.Resources.resources
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.GenerateResource.cache
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.CoreCompileInputs.cache
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.exe
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.pdb

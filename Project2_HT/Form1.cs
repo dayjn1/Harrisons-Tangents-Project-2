@@ -457,15 +457,17 @@ namespace Project2_HT
             //fileWrite.BaseStream.Seek(0, SeekOrigin.End);
 
             fileWrite.WriteLine(" Instruction | Fetch | Decode | Execute | Memory | WriteBack ");
-            fileWrite.WriteLine("_");
-
+            fileWrite.WriteLine("_____________________________________________________________");
+            int f, d; 
             for (int i = 0; i < Input_Instructions.Count; i++)
             {
-                fileWrite.WriteLine(Input_Instructions[i].Mnemonic);
+                f = Input_Instructions[i].FetchCC;
+                fileWrite.WriteLine(Input_Instructions[i].Mnemonic );
+                
             }
             fileWrite.WriteLine("Cycle: " + cycleCount + "\n");
             fileWrite.WriteLine("Hazard: " + hazardCount);
-            // fileWrite.Write(Msg);
+            
             fileWrite.Flush();
             fileWrite.Close();
         }
