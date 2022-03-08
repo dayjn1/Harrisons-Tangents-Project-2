@@ -89,8 +89,10 @@ namespace Project2_HT
                         Console.WriteLine("Invalid parse");
 
                 }//end while
-                label8.Text = "Loaded";
-                cycleCount = 0;
+                //gui stuff
+                label8.Text = "Loaded"; //tell user file is loaded
+                //reset cycles and hazards to zero for next run
+                cycleCount = 0; 
                 hazardCount = 0;
                 cycleLabel.Text = cycleCount.ToString();
                 label7.Text = hazardCount.ToString();
@@ -128,23 +130,25 @@ namespace Project2_HT
 
         public void Simulation()
         {
-            Instruction wb;
+            Instruction wb; //stores the writeback instruction if needed
+            
+            //iterate through each of the instructions
             for (int i = 0; i < this.Input_Instructions.Count; i++)
             {
-
+                //go through the pipeline as long as there's instructions we havent touched
                 while (this.SimulationCount < this.Input_Instructions.Count)
                 {
                     CountUpdate();
                     UpdateAndDelay();
-
+                    //writeback step
                     if (this.Register.Count > 0)
                     {
-
+                        //pop the instruction from and clean the register it was using
                         wb = this.Register.Pop();
                         usedRegisters.Remove(wb.DestReg);
                         this.RegisterBox.Text = "";
                     }
-
+                    //rest of these are calls to process parts of the pipeline
                     if (this.Memory.Count > 0)
                     {
                         ProcessRegister();
@@ -165,7 +169,7 @@ namespace Project2_HT
 
                         ProcessDecode();
                     }
-
+                    //if theres more to fetch, repeat this part
                     if (this.SimulationCount < this.Input_Instructions.Count && this.Fetch.Count == 0)
                     {
                         PushFetch(this.Input_Instructions[this.SimulationCount]);
@@ -175,7 +179,7 @@ namespace Project2_HT
                 }
 
                 // clean up pipeline
-
+                //iterate through this block as long as pipeline counts aren't 0
                 while (this.Fetch.Count != 0 || this.Decode.Count != 0 || this.Execute.Count != 0 || this.Memory.Count != 0 || this.Register.Count != 0)
                 {
 
@@ -244,11 +248,12 @@ namespace Project2_HT
 
                 if (this.Memory.Count > 0)      // memory for one cycle
                 {
-                    Instruction temp = this.Memory.Peek();
-
-                    if (temp.MemoryCC == 0)
+                    Instruction temp = this.Memory.Peek(); //get the instruction from memory
+                    
+                    //run memory process while the decode finishes
+                    if (temp.MemoryCC == 0) 
                     {
-                        temp = this.Memory.Pop();
+                        temp = this.Memory.Pop(); 
                         this.MemoryBox.Text = "";
 
                         if (temp.RegisterCC > 0)
@@ -262,7 +267,7 @@ namespace Project2_HT
                     }
                     UpdateAndDelay();
                 }
-
+                //run execute process while the decode finishes
                 if (this.Execute.Count > 0)     // Execute for one cycle
                 {
                     Instruction temp = this.Execute.Peek();
@@ -302,6 +307,7 @@ namespace Project2_HT
                 }
 
             }
+            //same idea as above
             else if (i == 2) //execute stall
             {
                 if (this.Register.Count > 0)        // register for one cycle
@@ -436,9 +442,11 @@ namespace Project2_HT
         */
         public void ProcessDecode()
         {
+            //get the instruction from fetch
             Instruction i = this.Fetch.Pop();
             this.FetchBox.Text = "";
-            CompareOpRegisters(i);
+            CompareOpRegisters(i); //see if the operand registers are stale
+            //if we need to write back to the destination register
             if(i.writeBack == true)
             {
                 CheckRegisters(i);
