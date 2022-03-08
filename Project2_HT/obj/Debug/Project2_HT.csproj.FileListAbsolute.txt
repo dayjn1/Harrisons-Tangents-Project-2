@@ -11,7 +11,6 @@ C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\bin\Debug\Project2_HT.exe.c
 C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\bin\Debug\Project2_HT.exe
 C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\bin\Debug\Project2_HT.pdb
 C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\obj\Debug\Project2_HT.csprojAssemblyReference.cache
-C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\obj\Debug\Project2_HT.Form1.resources
 C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\obj\Debug\Project2_HT.Properties.Resources.resources
 C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\obj\Debug\Project2_HT.csproj.GenerateResource.cache
 C:\Users\janin\OneDrive\Documents\GitHub\Project2_HT\obj\Debug\Project2_HT.csproj.CoreCompileInputs.cache
@@ -49,3 +48,13 @@ C:\Users\Hannah Taylor\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT
 C:\Users\Hannah Taylor\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.CoreCompileInputs.cache
 C:\Users\Hannah Taylor\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.exe
 C:\Users\Hannah Taylor\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.pdb
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\bin\Debug\Project2_HT.exe.config
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\bin\Debug\Project2_HT.exe
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\bin\Debug\Project2_HT.pdb
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.AssemblyReference.cache
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.Tangents.resources
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.Properties.Resources.resources
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.GenerateResource.cache
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.csproj.CoreCompileInputs.cache
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.exe
+C:\Users\chibi\Documents\GitHub\Harrisons-Tangents-Project-2\Project2_HT\obj\Debug\Project2_HT.pdb
