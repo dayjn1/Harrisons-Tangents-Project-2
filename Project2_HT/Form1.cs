@@ -281,7 +281,7 @@ namespace Project2_HT
         }
 
         /**
-        * Method Name: InvalidFound()
+        * Method Name: HaltFound()
         * Method Purpose: Method to finish simulation when halt reaches Execute before it is popped off
         *
         * <hr>
