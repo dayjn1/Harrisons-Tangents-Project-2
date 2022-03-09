@@ -142,13 +142,9 @@ namespace Project2_HT
             {
                 CountUpdate();
                 UpdateAndDelay();
-
                 RegisterCycle();
-
                 ProcessRegister();
-
                 ProcessMemory();
-                
                 ProcessExecute(); //add check here as well for halt
                 if (halt)
                 {
@@ -156,7 +152,6 @@ namespace Project2_HT
                 }
 
                 ProcessDecode();
-
                 FetchCycle();
 
                 //check if Invalid was called and return from Simulation
@@ -165,34 +160,23 @@ namespace Project2_HT
                 {
                     return; //return to what called Simulation
                 }
-
             }
 
             // clean up pipeline
 
             while (this.Fetch.Count != 0 || this.Decode.Count != 0 || this.Execute.Count != 0 || this.Memory.Count != 0 || this.Register.Count != 0)
             {
-
                 RegisterCycle();
-
                 CountUpdate();
                 UpdateAndDelay();
-
                 ProcessRegister();
-
                 ProcessMemory();
-
                 ProcessExecute(); //call halt method within ProcessExecute and add check if halt was found to return/break from simulation loop
                 if (halt)
                 {
                     return;
                 }
-
                 ProcessDecode();
-
-                //don't need to check for invalid here
-
-                
             }
 
         }//end simulation
@@ -358,8 +342,7 @@ namespace Project2_HT
                     UpdateAndDelay();
                 }
 
-                // fetch for one cycle
-                FetchCycle();
+                FetchCycle();                   // fetch for one cycle
                 UpdateAndDelay();
 
             }
