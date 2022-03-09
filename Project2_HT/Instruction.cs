@@ -141,6 +141,7 @@ namespace Project2_HT
                     this.ExecuteCC = InstructionSet[i].ExecuteCC;
                     this.MemoryCC = InstructionSet[i].MemoryCC;
                     this.RegisterCC = InstructionSet[i].RegisterCC;
+                    this.writeBack = InstructionSet[i].writeBack;
                     this.useRD = InstructionSet[i].useRD;
                     this.useR1 = InstructionSet[i].useR1;
                     this.useR2 = InstructionSet[i].useR2;

@@ -449,11 +449,26 @@ namespace Project2_HT
             //if we need to write back to the destination register
             if(i.writeBack == true)
             {
+<<<<<<< Updated upstream
                 CheckRegisters(i);
             }
             if (i.DecodeCC != 0)
             {
                 PushDecode(i);
+=======
+                Instruction i = this.Fetch.Pop();
+                this.FetchBox.Text = "";
+                CompareOpRegisters(i);
+                if(i.writeBack== true)
+                {
+                    CheckRegisters(i);
+                }
+
+                if (i.DecodeCC != 0)
+                {
+                    PushDecode(i);
+                    UpdateAndDelay();
+>>>>>>> Stashed changes
 
                 UpdateAndDelay();
 
